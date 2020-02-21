@@ -1,0 +1,58 @@
+﻿<Window x:Class="Bioskop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <DataGrid Name="CentralGrid" VerticalAlignment="Center" HorizontalAlignment="Center" Height="Auto" Width="auto" AlternatingRowBackground="LightCyan" SelectionMode="Single" SelectionUnit="FullRow" IsReadOnly="True"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Height="31" Width="Auto">
+           
+            <Button Content="Film" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+            <Button Content="Dobavljac" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="74" Click="Button_Click_1" />
+            <Button Content="Korisnik" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="74" Click="Button_Click_3"/>
+            <Button Content="Nabavka" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="74" Click="Button_Click_4" />
+            <Button Content="Zanr" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="74" Click="Button_Click_5" />
+            <Button Content="Zaposleni" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="74" Click="Button_Click_6" />
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="38" Width="352">
+            <Button Name="btnDodajFilm" Content="Dodaj Film" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnDodajFilm_Click"/>
+            <Button Name="btnIzmjeniFilm" Content="Izmjeni Film" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnIzmjeniFilm_Click"/>
+            <Button Name="btnObrisiFilm" Content="Obrisi Film" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnObrisiFilm_Click"/>
+
+            <Button Name="btnDodajDobavljaca" Content="Dodaj Dobavljaca" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnDodajDobavljaca_Click" />
+            <Button Name="btnIzmjeniDobavljaca" Content="Izmjeni Dobavljaca" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnIzmjeniDobavljaca_Click" />
+            <Button Name="btnObrisiDobavljaca" Content="Obrisi Dobavljaca" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnObrisiDobavljaca_Click"/>
+
+
+            
+
+            <Button Name="btnDodajKorisnika" Content="Dodaj Korisnika" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnDodajKorisnika_Click" />
+            <Button Name="btnIzmjeniKorisnika" Content="Izmjeni Korisnika" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnIzmjeniKorisnika_Click"/>
+            <Button Name="btnObrisiKorisnika" Content="Obrisi Korisnika" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnObrisiKorisnika_Click"/>
+
+            <Button Name="btnDodajNabavku" Content="Poruci nabavku" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnDodajNabavku_Click" />
+            <Button Name="btnIzmjeniNabavku" Content="Izmjeni Nabavku" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnIzmjeniNabavku_Click" />
+            <Button Name="btnObrisiNabavku" Content="Obrisi Nabavku" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnObrisiNabavku_Click" />
+
+            <Button Name="btnDodajZanr" Content="Dodaj Zanr" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnDodajZanr_Click" />
+            <Button Name="btnIzmjeniZanr" Content="Izmjeni Zanr" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnIzmjeniZanr_Click"/>
+            <Button Name="btnObrisiZanr" Content="Obrisi Zanr" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnObrisiZanr_Click" />
+
+            <Button Name="btnDodajZaposleni" Content="Dodaj Zaposlenog" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnDodajZaposleni_Click" />
+            <Button Name="btnIzmjeniZaposleni" Content="Izmjeni Zaposlenog" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnIzmjeniZaposleni_Click"/>
+            <Button Name="btnObrisiZaposleni" Content="Obrisi Zaposlenog" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="117" Click="btnObrisiZaposleni_Click"/>
+            
+                
+
+
+
+        </StackPanel>
+
+        
+        
+    </Grid>
+</Window>

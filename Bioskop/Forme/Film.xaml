@@ -1,0 +1,33 @@
+﻿<Window x:Class="Bioskop.Forme.Film"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj novi film" Height="300" Width="400">
+    <Grid>
+        <Label Content="Naziv Filma:" HorizontalAlignment="Left" Margin="117,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.307"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.524"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Godina Objavljivanja:" HorizontalAlignment="Left" Margin="69,67,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtNazivFilma" HorizontalAlignment="Left" Height="30" Margin="226,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="txtGodinaObj" HorizontalAlignment="Left" Height="30" Margin="226,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <Button Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="69,210,0,0" VerticalAlignment="Top" Width="75" Click="btnSacuvaj_Click"/>
+        <Button Name="btnzatvori"  Content="Zatvori" HorizontalAlignment="Left" Margin="251,210,0,0" VerticalAlignment="Top" Width="75" Click="btnZatvori_Click"/>
+        <Label Content="Zanr:" HorizontalAlignment="Left" Margin="106,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Korisnik:" HorizontalAlignment="Left" Margin="106,129,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zaposleni:" HorizontalAlignment="Left" Margin="106,160,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cmbZanr" HorizontalAlignment="Left" Margin="226,102,0,0" VerticalAlignment="Top" Width="100" DisplayMemberPath="Zanr" SelectedValuePath="ZanrID"/>
+        <ComboBox Name="cmbKarta" HorizontalAlignment="Left" Margin="226,133,0,0" VerticalAlignment="Top" Width="100" DisplayMemberPath="ImeKorisnika" SelectedValuePath="KorisnikID"/>
+        <ComboBox Name="cmbZaposleni" HorizontalAlignment="Left" Margin="226,164,0,0" VerticalAlignment="Top" Width="100" DisplayMemberPath="Zaposleni" SelectedValuePath="ZaposleniID"/>
+
+    </Grid>
+</Window>
